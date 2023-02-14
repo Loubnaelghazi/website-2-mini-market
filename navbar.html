@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CHABAB's Market</title>
+  <link rel="icon" href="images/logo.jpg">
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid ">
+      <div class="collapse navbar-collapse justify-content-end">
+        <button type="button" class="btn btn-outline-light px-3 me-2" id="connexion" data-bs-toggle="modal"
+          data-bs-target="#myModal"><span class="fa fa-user"></span>
+          Me connecter
+        </button>
+        <button type="button" class="btn btn-light me-3"><span class="fa fa-shopping-cart"></span> Achats</button>
+      </div>
+  </nav>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid ">
+      <!--logo du site-->
+      <img src="images/logo.jpg" class="rounded-circle shadow-4-strong" style="width:3%">
+      <!-- smiya dyl site dylna-->
+      <a class="navbar-brand text-success" href="navbar.html">CHABAB'S MARKET</a>
+      <!--navbar brand is for our project name-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end  menu" id="navbarColor03">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="navbar.html">Accueil
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+
+
+          <div class="dropdown menu2">
+
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catégories
+            </a>
+            <!--drop down menu class dyl menu compose-->
+            <ul class="dropdown-menu categories">
+              <li>
+
+                <a class="dropdown-item" id="fruits" href="#fakiha">Fruits & Légumes</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" id="viandes" href="#l7em">Boucherie & Volaille</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" id="epicerie" href="#7anout">Epicerie</a>
+              </li>
+              <li>
+                <a class="dropdown-item" id="eaux" href="#chrib">Eaux & Boissons</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <!--bouton dyl search-->
+      <form class="input-group w-25">
+        <input type="text" class="form-control" placeholder="Que cherchez-vous ?" class="w-5">
+        <button class="btn btn-success" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
+      </form>
+  </nav>
+
+
+  <!-- Carousel -->
+  <div id="demo" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/pic1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pic2.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pic3.jpg" class="d-block w-100">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!--next nav-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+      <h5>Livraison gratuite sur toutes les commandes de plus de 499dh </h5><br>
+      <h5 class="text-success"> #CHABAB'S MARKET</h5>
+    </div>
+  </nav>
+  <div>
+    <img src="images/lol.png" class="rounded mx-auto d-block" width="1200">
+  </div>
+  </div>
+  <!--category-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+      <h4 class="border-bottom border-success border-4 p-1">Acheter par Catégorie</h4>
+  </nav>
+  <div class="container">
+    <div class="d-flex p-3">
+      <!--fruits and vegetables-->
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top" src="images/fruits.jpg" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title text-center">Fruits & légumes</h4>
+          <a href="#fawakih" class="btn btn-success" id="fawakih">Découvrir</a>
+        </div>
+      </div>
+      <!--meat-->
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top" src="images/viande.jpg" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title text-center">Boucherie & volaille</h4>
+          <a href="#l7em" class="btn btn-success" id="meat">Découvrir</a>
+        </div>
+      </div>
+      <!--epicerie-->
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top" src="images/epicerie.jpg" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title text-center">Epicerie</h4>
+          <a href="#7anout" class="btn btn-success" id="epic">Découvrir</a>
+        </div>
+      </div>
+      <!--boisson-->
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top" src="images/boisson.jpg" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title text-center">Eaux & boissons</h4>
+          <a href="#chrib" class="btn btn-success" id="water">Découvrir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--recommendations-->
+  <!-- Carousel recommendations -->
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="reco">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+          <h4 class="border-bottom border-success border-4 p-1">Les Recommandations</h4>
+      </nav>
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="d-flex p-3">
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/ananas.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Ananas vendu et préparé à la pièce </h5>
+                <p class="item-price"><b>21,95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-transparent" id="hh" type="submit"><span id="gg" class="fa fa-heart-o text-danger"
+                    aria-hidden="true"></span></button>
+                </button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/banga.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Boisson gazeuse - Banga Tropical 1L</h5>
+                <p class="item-price"><b>7,95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg1"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/chri7a.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Figues beldi en barquette 250g</h5>
+                <p class="item-price"><b>29,95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg2"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/FA.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Farine complète 10Kg - MOONY</h5>
+                <p class="item-price"><b>93,00 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg3"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="d-flex p-3">
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/framboise.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Framboise Extra en barquette de 125g</h5>
+                <p class="item-price"><b>13,95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg4"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/FARINE.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Farine complète 5Kg - MOONY</h5>
+                <p class="item-price"><strike>50.95 DH</strike> <b>48,95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg5"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/kitkat.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Chocolat Kit kat 2 Finger 17,7g -NESTLE</h5>
+                <p class="item-price"> <span>3,50 DH</span></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                  <a href="#" class="btn btn-success">Ajouter au panier</a>
+                  <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg6"
+                      class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/lben.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Lben beldi 900g CHERGUI</h5>
+                <p class="item-price"> <span>10.00 DH</span></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg7"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="d-flex p-3">
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/tomate.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Tomate cerise en barquette 250g</h5>
+                <p class="item-price"> <span>7,95 DH</span></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-half-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg8"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/ananas.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Ananas vendu et préparé à la pièce</h5>
+                <p class="item-price"><b>21,95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/toufa7oun.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Pomme gala en sachet de 1Kg</h5>
+                <p class="item-price"><strike>25.00 DH</strike> <b>21.95 DH</b></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg10"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:250px">
+              <img class="card-img-top mx-auto" src="images/sukaron.jpg" style="width:50%">
+              <div class="card-body">
+                <h5>Sucre cristallisé 1Kg -SUKARI</h5>
+                <p class="item-price"> <span>6,95 DH</span></p>
+                <div class="star-rating">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-success">Ajouter au panier</a>
+                <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg11"
+                    class="fa fa-heart-o text-danger" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" style="width: 150px;" type="button"
+        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" style="width: 150px;" type="button"
+        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--products : fruits nd vegete-->
+
+
+    <div class="container" id="fakiha" style="display: none;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+          <h4 class="border-bottom border-success border-4 p-1">Fruits & Légumes </h4>
+      </nav>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/framboise.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Framboise Extra en barquette de 125g</h5>
+            <p class="item-price"> <b>13,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/toufa7oun.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Pomme gala en sachet de 1Kg</h5>
+            <p class="item-price"><strike>25.00 DH</strike> <b>21.95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/tomate.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Tomate cerise en barquette 250g</h5>
+            <p class="item-price"><b>7,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/artichaut.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Artichaut violet 1Kg</h5>
+            <br>
+            <p class="item-price"><b>15,95 DH DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/navets.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Navet rond 500g</h5>
+            <p class="item-price"> <b>3,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/citron.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Citron jaune 500g</h5>
+            <p class="item-price"> <b>4,00 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/grenade.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Grenade 1Kg</h5>
+            <p class="item-price"><b>11,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/epinard.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Epinard 500g</h5>
+            <p class="item-price"> <b>8,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/patate.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Patate douce 1 Kg</h5>
+            <p class="item-price"> <b>10,50 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/banane.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Banane 1Kg</h5>
+            <p class="item-price"> <b>19,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/celeri.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Céleri branche 250g</h5>
+            <p class="item-price"> <b>3,85 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/coco.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Noix de coco à la pièce</h5>
+            <p class="item-price"><b>15,95 DH/b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fin de la partie fruits et legumes-->
+
+
+
+    <!--l epicerie -->
+
+    <div class="container" id="7anout" style="display: none;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+          <h4 class="border-bottom border-success border-4 p-1"> Epicerie </h4>
+      </nav>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/sukaron.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Sucre cristallisé 1Kg -SUKARI</h5>
+            <br>
+            <p class="item-price"> <b>6,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/sauce.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Ketchup 310g - STAR</h5>
+            <br>
+            <br>
+            <p class="item-price"> <b>13,50 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/spaghetti.png" style="width:50%">
+          <div class="card-body">
+            <h5>2 packs de spaghetti 500g + 500g gratuit - KAYNA</h5>
+            <p class="item-price"><b>18,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/FA.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Farine complète 10Kg - MOONY</h5>
+            <br>
+            <p class="item-price"><b>93,00 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/tuc.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Biscuits salés saveur original 24g - TUC</h5>
+            <p class="item-price"> <b>2,00 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/kinder.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Biscuits Happy Hippo 103,5g - KINDER</h5>
+            <p class="item-price"> <b>28,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/chri7a.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Figues beldi en barquette 250g</h5>
+            <p class="item-price"><b>29,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/FARINE.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Farine complète 5Kg - MOONY</h5>
+            <p class="item-price"> <strike>50.95 DH</strike> <b>48,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/kitkat.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Chocolat Kit kat 2 Finger 17,7g -NESTLE</h5>
+            <br>
+            <p class="item-price"> <b>3,50 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/vinaigre.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>2 vinaigres National 50cl + vinaigre national 20cl</h5>
+            <p class="item-price"> <strike>8,70 DH</strike> <b>7,95 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/argan.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Huile d'Argan biologique 50cl - LES DOMAINES</h5>
+            <p class="item-price"> <b>350,00 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/champignons.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Champignons pieds et morceau 400g - HARMONY</h5>
+            <p class="item-price"><b>15,70 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fin de la partie epicerie -->
+
+
+    <!--les viandes -->
+    <div class="container" id="l7em" style="display: none;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+          <h4 class="border-bottom border-success border-4 p-1"> Boucherie & volaille </h4>
+      </nav>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/socette.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Saucisses de boeuf douces 500g</h5>
+            <p class="item-price"> <b>54,90 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/l7ima.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Viande tagine de veau sans os 1Kg</h5>
+            <p class="item-price"> <b>129,90 DH
+              </b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/l7em.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Viande tagine de veau 1Kg</h5>
+            <p class="item-price"><b>125,90 DH
+              </b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/kfta.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Deux steacks hachés de boeuf maigre 250g</h5>
+            <p class="item-price"><b>29,90 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex p-4">
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/pouletduo.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Duo de poulet pour barbecue</h5>
+            <p class="item-price"> <b>82,90 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/jaja.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Haut de cuisse de poulet 250g</h5>
+            <p class="item-price"> <b>11,90 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/fkhed.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Pilons de poulet 250g</h5>
+            <br>
+            <p class="item-price"><b>12,90 DH</b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+
+
+        <div class="card mx-auto" style="width:250px">
+          <img class="card-img-top mx-auto" src="images/djajakamla.jpg" style="width:50%">
+          <div class="card-body">
+            <h5>Poulet entier environ 1,25Kg</h5>
+            <p class="item-price"><b>53,90 DH
+              </b></p>
+            <div class="star-rating">
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-success">Ajouter au panier</a>
+            <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+                aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <!--fin de la partie viandes-->
+
+
+  <!--les boissons-->
+  <div class="container" id="chrib" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+        <h4 class="border-bottom border-success border-4 p-1"> Boucherie & volaille </h4>
+    </nav>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/bidoza.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Aïn Saïss Eau minérale 5L</h5>
+          <br>
+          <p class="item-price"> <b>11,90 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/rdoma.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Aïn Saïss Eau minérale 1,5L</h5>
+          <br>
+          <p class="item-price"> <b>4,65 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/magaz.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Aïn Saïss Eau minérale gazéifiée bouteille en verre 75cl</h5>
+          <p class="item-price"><b>9,80 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/magazhh.png" style="width:50%">
+        <div class="card-body">
+          <h5>Aïn Saïss Eau minérale gazeuse 1L</h5>
+          <br>
+          <p class="item-price"><b>5,90 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/cirop.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Casino Sirop de citron à la Stevia 75cl</h5>
+          <br>
+          <p class="item-price"> <b>24,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/crip.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Casino Sirop de menthe 75cl</h5>
+          <br>
+          <p class="item-price"> <b>25,95 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/walmass.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Oulmès Boisson gazeuse aromatisée Orange 25cl verre</h5>
+          <p class="item-price"><b>5,80 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/madyali.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Aquarius citron 50cl</h5>
+          <br>
+          <br>
+          <p class="item-price"><b>6,10 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Ajouter au panier</a>
+          <button class="btn btn-trasnparent" id="hh" type="submit"><span id="gg9" class="fa fa-heart-o text-danger"
+              aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  </div>
+
+
+  <!--fin de la partie boissons-->
+
+
+
+
+  <!--login code :-->
+  <!-- The Modal -->
+  <div class="modal modal-xl " id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <section class="vh-50 " id="login" style="background-color: transparent; display: block;">
+            <div class="container py-5 ">
+              <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col col-xl-10">
+                  <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                      <div class="col-md-6 col-lg-5 d-none d-md-block">
+                        <img src="images/495.jpg" alt="login form" class="img-fluid"
+                          style="border-radius: 1rem 0 0 1rem;" />
+                      </div>
+                      <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5 text-black">
+
+                          <form id="myform" class="form-inline" role="form">
+
+                            <div class="d-flex align-items-center mb-3 pb-1" class="form-group">
+
+                              <span class="navbar-brand text-success"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">CHABAB'S
+                                MARKET</span>
+                            </div>
+
+                            <h5 class="fw-bold mb-5" style="letter-spacing: 1px; color:seagreen; ">SE CONNECTER</h5>
+
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form2Example17" required class="form-control form-control-lg"
+                                placeholder="VOTRE E-MAIL" />
+
+                            </div>
+
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form2Example27" class="form-control form-control-lg"
+                                placeholder="VOTRE MOT DE PASSE" />
+
+                            </div>
+
+                            <div class="pt-1 mb-4">
+                              <button class="btn btn-success btn-block mb-4" data-toggle="popover" type="button">Se
+                                connecter</button>
+                            </div>
+
+                            <a class="small text-muted" href="#!">Mot de passe oublié?</a>
+                            <p class="mb-5 pb-lg-2" style="color: #393f81;">Nouveau utilisateur ? <a id="salam"
+                                href="#salam" style="color: #393f81;">Créer votre compte ici</a></p>
+                            <h5 class="fw-bold mb-5" style="letter-spacing: 1px; color:seagreen; ">S'identifier</h5>
+                            <!-- nom & prenom input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form3Example3" class="form-control" placeholder="Votre Nom" />
+
+                            </div>
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form3Example3" class="form-control" placeholder="Votre Prenom" />
+
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form3Example3" class="form-control"
+                                placeholder="Votre adresse e-mail" />
+
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form3Example4" class="form-control"
+                                placeholder="Veuillez saisir un mot de passe" />
+
+                            </div>
+                            <!-- Password confirm input -->
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form3Example4" class="form-control"
+                                placeholder="Veuillez confirmer votre mot de passe" />
+
+                            </div>
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-success btn-block mb-4">
+                              S'IDENTIFIER
+                            </button>
+
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                              <p>ou s'idnetifier avec :</p>
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fa fa-facebook-f"></i>
+                              </button>
+
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fa fa-google"></i>
+                              </button>
+
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fa fa-twitter"></i>
+                              </button>
+                              <div class="container">
+                                <a href="#!" class="small text-muted">Terms of use.</a>
+                                <a href="#!" class="small text-muted">Privacy policy</a>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+      </section>
+    </div>
+
+
+
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Section: FORM LOGIN DE L ADIMINISTRATEUR -->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <!--fin du code -->
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Rejoignez-nous sur les réseaux sociaux :</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-success">
+              <i class="fas fa-gem me-3"></i>CHABAB's Market
+            </h6>
+            <p>
+              Trois engagements dictent les actions de CHABAB'S MARKET : <br>
+              - Le mieux vivre . <br>
+              - Le mieux manger. <br>
+              - Le mieux consommer : la responsabilité sociétale .
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-success">
+              A Propos
+            </h6>
+            
+            <p>
+              <a href="administration.html" target="_blank"  class="text-reset">Administration </a>
+            </p>
+            <p>
+              <a href="recrutement.html" class="text-reset">Recrutement</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4  col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-success">Besoin d'aide ?</h6>
+            <p><i class="fa fa-home me-3 text-secondary"></i> TANGER FSTT</p>
+            <p>
+              <i class="fa fa-envelope me-3 text-secondary"></i>
+              CHABABMARKET@gmail.com
+            </p>
+            <p><i class="fa fa-phone me-3 text-secondary"></i> + 212 611223344</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-success fw-bold" href="navbar.html">CHABAB's Market.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!--js-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

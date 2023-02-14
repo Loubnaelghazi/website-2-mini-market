@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CHABAB's Market</title>
+        <link rel="icon" href="images/logo.jpg">
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      </head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid ">
+          <div class="collapse navbar-collapse justify-content-start">
+            <a href="navbar.html"><button  type="button" class= "btn btn-outline-light px-3 me-2"> < RETOUR </button></a>
+            
+          </div>
+      </nav>
+    
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+          <!--logo du site-->
+          <img src="images/logo.jpg" class="rounded-circle shadow-4-strong" style="width:3%">
+          <!-- smiya dyl site dylna-->
+          <a class="navbar-brand text-success" href="navbar.html">CHABAB'S MARKET</a>
+          <!--navbar brand is for our project name-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end  menu" id="navbarColor03">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="navbar.html">Accueil
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+    
+              <li class="nav-item ">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+    
+    
+              <div class="dropdown menu2">
+    
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catégories
+                </a>
+                <!--drop down menu class dyl menu compose-->
+                <ul class="dropdown-menu categories">
+                  <li>
+    
+                    <a class="dropdown-item" id="fraise" href="#fakiha">Fruits & Légumes</a>
+                  </li>
+    
+                  <li>
+                    <a class="dropdown-item" id="dl3a" href="#l7em">Boucherie & Volaille</a>
+                  </li>
+    
+                  <li>
+                    <a class="dropdown-item" id="9adour" href="#7anout">Epicerie</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" id="hanan" href="#chrib">Eaux & Boissons</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <!--bouton dyl search-->
+          <form class="input-group w-25">
+            <input type="text" class="form-control" placeholder="Que cherchez-vous ?" class="w-5">
+            <button class="btn btn-success" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
+          </form>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+            <br>
+          <h4 class="border-bottom border-success border-4 p-1"> CLIENTS & PARTENAIRES </h4>
+      </nav>
+    <center>
+    <div class="container-fluid" >
+    
+      <img src="images/fr7an.jpg" class="mx-auto d-block w-100">
+     
+   
+  </div>
+</center>
+        
+
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+          <h4 class="border-bottom border-success border-4 p-1">Les Catégories</h4>
+      </nav>
+      <div class="container">
+        <div class="d-flex p-3">
+          <!--fruits and vegetables-->
+          <div class="card mx-auto" style="width:250px">
+            <img class="card-img-top" src="images/fruits.jpg" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title text-center">Fruits & légumes</h4>
+              <a href="#fawakih" class="btn btn-success" id="lubna">Découvrir</a>
+            </div>
+          </div>
+          <!--meat-->
+          <div class="card mx-auto" style="width:250px">
+            <img class="card-img-top" src="images/viande.jpg" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title text-center">Boucherie & volaille</h4>
+              <a href="#l7em" class="btn btn-success" id="fagussa">Découvrir</a>
+            </div>
+          </div>
+          <!--epicerie-->
+          <div class="card mx-auto" style="width:250px">
+            <img class="card-img-top" src="images/epicerie.jpg" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title text-center">Epicerie</h4>
+              <a href="#7anout" class="btn btn-success" id="mustapha">Découvrir</a>
+            </div>
+          </div>
+          <!--boisson-->
+          <div class="card mx-auto" style="width:250px">
+            <img class="card-img-top" src="images/boisson.jpg" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title text-center">Eaux & boissons</h4>
+              <a href="#chrib" class="btn btn-success" id="fatimamsmuma">Découvrir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--products-->
+
+
+
+<!--products : fruits nd vegete-->
+
+
+<div class="container" id="fruta" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+        <h4 class="border-bottom border-success border-4 p-1">Fruits & Légumes </h4>  
+     
+    </nav>
+    <br>
+    <a href="#" class="btn btn-success" style="margin-left:33px ;">Ajouter Un Produit</a>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/framboise.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Framboise Extra en barquette de 125g</h5>
+          <p class="item-price"> <b>13,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/toufa7oun.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Pomme gala en sachet de 1Kg</h5>
+          <p class="item-price"><strike>25.00 DH</strike> <b>21.95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/tomate.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Tomate cerise en barquette 250g</h5>
+          <p class="item-price"><b>7,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/artichaut.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Artichaut violet 1Kg</h5>
+          <br>
+          <p class="item-price"><b>15,95 DH DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/navets.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Navet rond 500g</h5>
+          <p class="item-price"> <b>3,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/citron.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Citron jaune 500g</h5>
+          <p class="item-price"> <b>4,00 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/grenade.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Grenade 1Kg</h5>
+          <p class="item-price"><b>11,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/epinard.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Epinard 500g</h5>
+          <p class="item-price"> <b>8,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/patate.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Patate douce 1 Kg</h5>
+          <p class="item-price"> <b>10,50 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/banane.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Banane 1Kg</h5>
+          <p class="item-price"> <b>19,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/celeri.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Céleri branche 250g</h5>
+          <p class="item-price"> <b>3,85 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/coco.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Noix de coco à la pièce</h5>
+          <p class="item-price"><b>15,95 DH</p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin de la partie fruits et legumes-->
+
+
+
+  <!--l epicerie -->
+
+  <div class="container" id="lubnazin" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+        <h4 class="border-bottom border-success border-4 p-1"> Epicerie </h4>
+    </nav>
+    <br>
+    <a href="#" class="btn btn-success" style="margin-left:33px ;">Ajouter Un Produit</a>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/sukaron.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Sucre cristallisé 1Kg -SUKARI</h5>
+          <br>
+          <p class="item-price"> <b>6,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/sauce.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Ketchup 310g - STAR</h5>
+          <br>
+          <br>
+          <p class="item-price"> <b>13,50 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/spaghetti.png" style="width:50%">
+        <div class="card-body">
+          <h5>2 packs de spaghetti 500g + 500g gratuit - KAYNA</h5>
+          <p class="item-price"><b>18,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/FA.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Farine complète 10Kg - MOONY</h5>
+          <br>
+          <p class="item-price"><b>93,00 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/tuc.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Biscuits salés saveur original 24g - TUC</h5>
+          <p class="item-price"> <b>2,00 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/kinder.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Biscuits Happy Hippo 103,5g - KINDER</h5>
+          <p class="item-price"> <b>28,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/chri7a.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Figues beldi en barquette 250g</h5>
+          <p class="item-price"><b>29,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/FARINE.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Farine complète 5Kg - MOONY</h5>
+          <p class="item-price"> <strike>50.95 DH</strike> <b>48,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/kitkat.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Chocolat Kit kat 2 Finger 17,7g -NESTLE</h5>
+          <br>
+          <p class="item-price"> <b>3,50 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/vinaigre.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>2 vinaigres National 50cl + vinaigre national 20cl</h5>
+          <p class="item-price"> <strike>8,70 DH</strike> <b>7,95 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/argan.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Huile d'Argan biologique 50cl - LES DOMAINES</h5>
+          <p class="item-price"> <b>350,00 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/champignons.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Champignons pieds et morceau 400g - HARMONY</h5>
+          <p class="item-price"><b>15,70 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin de la partie epicerie -->
+
+
+  <!--les viandes -->
+  <div class="container" id="la7m" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+        <h4 class="border-bottom border-success border-4 p-1"> Boucherie & volaille </h4>
+    </nav>
+    <br>
+    <a href="#" class="btn btn-success" style="margin-left:33px ;">Ajouter Un Produit</a>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/socette.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Saucisses de boeuf douces 500g</h5>
+          <p class="item-price"> <b>54,90 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/l7ima.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Viande tagine de veau sans os 1Kg</h5>
+          <p class="item-price"> <b>129,90 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/l7em.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Viande tagine de veau 1Kg</h5>
+          <p class="item-price"><b>125,90 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/kfta.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Deux steacks hachés de boeuf maigre 250g</h5>
+          <p class="item-price"><b>29,90 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex p-4">
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/pouletduo.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Duo de poulet pour barbecue</h5>
+          <p class="item-price"> <b>82,90 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/jaja.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Haut de cuisse de poulet 250g</h5>
+          <p class="item-price"> <b>11,90 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/fkhed.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Pilons de poulet 250g</h5>
+          <br>
+          <p class="item-price"><b>12,90 DH</b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-auto" style="width:250px">
+        <img class="card-img-top mx-auto" src="images/djajakamla.jpg" style="width:50%">
+        <div class="card-body">
+          <h5>Poulet entier environ 1,25Kg</h5>
+          <p class="item-price"><b>53,90 DH
+            </b></p>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-success">Modifier</a>
+           <a href="#" class="btn btn-success">Supprimer</a>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+<!--fin de la partie viandes-->
+
+
+<!--les boissons-->
+<div class="container" id="chrab" style="display: none;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
+      <h4 class="border-bottom border-success border-4 p-1"> Boucherie & volaille </h4>
+  </nav>
+  <br>
+  <a href="#" class="btn btn-success" style="margin-left:33px ;">Ajouter Un Produit</a>
+  <div class="d-flex p-4">
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/bidoza.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Aïn Saïss Eau minérale 5L</h5>
+        <br>
+        <p class="item-price"> <b>11,90 DH</b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/rdoma.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Aïn Saïss Eau minérale 1,5L</h5>
+        <br>
+        <p class="item-price"> <b>4,65 DH
+          </b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/magaz.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Aïn Saïss Eau minérale gazéifiée bouteille en verre 75cl</h5>
+        <p class="item-price"><b>9,80 DH
+          </b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+
+
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/magazhh.png" style="width:50%">
+      <div class="card-body">
+        <h5>Aïn Saïss Eau minérale gazeuse 1L</h5>
+        <br>
+        <p class="item-price"><b>5,90 DH
+          </b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="d-flex p-4">
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/cirop.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Casino Sirop de citron à la Stevia 75cl</h5>
+        <br>
+        <p class="item-price"> <b>24,95 DH</b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/crip.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Casino Sirop de menthe 75cl</h5>
+        <br>
+        <p class="item-price"> <b>25,95 DH
+          </b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/walmass.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Oulmès Boisson gazeuse aromatisée Orange 25cl verre</h5>
+        <p class="item-price"><b>5,80 DH
+          </b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+
+
+    <div class="card mx-auto" style="width:250px">
+      <img class="card-img-top mx-auto" src="images/madyali.jpg" style="width:50%">
+      <div class="card-body">
+        <h5>Aquarius citron 50cl</h5>
+        <br>
+        <br>
+        <p class="item-price"><b>6,10 DH
+          </b></p>
+        <div class="star-rating">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o text-warning"></i></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-success">Modifier</a>
+          <a href="#" class="btn btn-success">Supprimer</a>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+</div>
+
+
+<!--fin de la partie boissons-->
+<!--fin d e produits-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<!-- Footer -->
+<footer id="footer" class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Rejoignez-nous sur les réseaux sociaux :</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-success">
+              <i class="fas fa-gem me-3"></i>CHABAB's Market
+            </h6>
+            <p>
+              Trois engagements dictent les actions de ChABAB'S MARKET : <br>
+              - Le mieux vivre . <br>
+              - Le mieux manger. <br>
+              - Le mieux consommer : la responsabilité sociétale .
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-success">
+              A Propos
+            </h6>
+            <p>
+              <a href="administration.html" class="text-reset">Administration </a>
+            </p>
+            <p>
+              <a href="recrutement.html" class="text-reset">Recrutement</a>
+            </p>
+           
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4  col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-success">Besoin d'aide ?</h6>
+            <p><i class="fa fa-home me-3 text-secondary"></i> TANGER FSTT</p>
+            <p>
+              <i class="fa fa-envelope me-3 text-secondary"></i>
+              CHABABMARKET@gmail.com
+            </p>
+            <p><i class="fa fa-phone me-3 text-secondary"></i> + 212 611223344</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-success fw-bold" href="navbar.html">CHABAB's Market.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!--js-->
+  <script src="script2.js"></script>
+
+</body>
+</html>
