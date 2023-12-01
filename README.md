@@ -42,7 +42,7 @@ Chabab's Market offers the following key functionalities:
 
 ## Project Report
 
-For a detailed overview of our development process, challenges, and design choices, please refer to our [project report]([.[/project_report.pdf](https://github.com/Loubnaelghazi/website-2-mini-market/blob/main/RAPPORT%20DE%20MINI%20PROJET%20Mini%20%20Market.pdf)](https://github.com/Loubnaelghazi/website-2-mini-market/blob/main/RAPPORT%20DE%20MINI%20PROJET%20Mini%20%20Market.pdf)). The report includes images showcasing different aspects of our website.
+For a detailed overview of our development process, challenges, and design choices, please refer to our [project report](https://github.com/Loubnaelghazi/website-2-mini-market/blob/main/RAPPORT%20DE%20MINI%20PROJET%20Mini%20%20Market.pdf). The report includes images showcasing different aspects of our website.
 
 ## Usage
 
